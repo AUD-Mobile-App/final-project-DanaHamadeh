@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/REL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_default"
+    android:visibility="visible"
+    tools:context="com.hamadeh.danah.bucketlistproject.LoginandSignUp">
+
+    <Button
+        android:id="@+id/login_Button"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:background="@color/green"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="login"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login_Button"
+        android:layout_alignStart="@+id/login_Button"
+        android:layout_below="@+id/login_Button"
+        android:layout_marginTop="14dp"
+        android:background="@color/green"
+        android:fontFamily="sans-serif-condensed"
+        android:onClick="signUp"
+        android:text="Sign Up" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtEmail"
+        android:layout_alignStart="@+id/txtEmail"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/txtTitle"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="17dp"
+        android:rotation="40"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtEmail"
+        android:layout_alignRight="@+id/txtEmail"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginEnd="109dp"
+        android:layout_marginRight="109dp"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/walter_turncoat"
+        android:lineSpacingExtra="12sp"
+        android:text="Your "
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="24sp"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/txtTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTitle"
+        android:layout_alignStart="@+id/txtTitle"
+        android:layout_alignTop="@+id/txtTitle"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/walter_turncoat"
+        android:lineSpacingExtra="12sp"
+        android:text="Deadline"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="24sp"
+        android:typeface="serif" />
+
+</RelativeLayout>
